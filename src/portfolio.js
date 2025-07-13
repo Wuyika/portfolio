@@ -132,7 +132,7 @@ const educationInfo = {
       descBullets: [
         "Applied strong understanding of software development life cycles (SDLC) and agile methodologies.",
         "Developed mobile applications as part of coursework and personal projects.",
-        "Participated in hackathons and coding competitions.",
+        "Participated in hackathons and coding competitions."
       ]
     },
     {
@@ -152,7 +152,7 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Mobile Development", 
+      Stack: "Mobile Development",
       progressPercentage: "90%"
     },
     {
@@ -163,7 +163,7 @@ const techStack = {
       Stack: "Dart",
       progressPercentage: "90%"
     },
-     {
+    {
       Stack: "Android Development",
       progressPercentage: "75%"
     },
@@ -189,7 +189,7 @@ const workExperiences = {
       company: "WhileSmart",
       companylogo: require("./assets/images/whilesmart.png"),
       date: "Sep 2024 – Present",
-      desc: "",
+      desc: ""
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -205,7 +205,7 @@ const workExperiences = {
         "Configured CI/CD pipelines in Codemagic for automated testing, build optimization, and deployment of test APKs, enhancing workflow efficiency and reliability.",
         "Developed and implemented pixel-perfect UIs from Figma designs using Flutter, achieving 100% accuracy in UI testing with zero reported discrepancies.",
         "Implemented efficient state management and code optimization using the Flutter BLoC pattern, enhancing user engagement and interactivity by 40% through improved performance and responsiveness.",
-        "Implemented a custom calendar view for users to view tasks for the highlighted week.",   
+        "Implemented a custom calendar view for users to view tasks for the highlighted week."
       ]
     },
     {
