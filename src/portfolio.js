@@ -4,6 +4,18 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import {
+  FlutterIcon,
+  AndroidIcon,
+  IOSAppleIcon,
+  SwiftIcon,
+  FirebaseIcon,
+  KotlinIcon,
+  GitHubIcon,
+  CodemagicIcon,
+  DartIcon,
+  GitLabIcon
+} from "./assets/icons/icons";
 
 // Splash Screen
 
@@ -60,19 +72,55 @@ const skillsSection = {
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-
+  // <FlutterIcon width={50} height={50} />
+  //             <DartIcon width={50} height={50} />
+  //             <AndroidIcon width={50} height={50} />
+  //             <KotlinIcon width={50} height={50} />
+  //             <CodemagicIcon width={50} height={50} />
+  //             <FirebaseIcon width={50} height={50} />
+  //             <SwiftIcon width={50} height={50} />
+  //             <GitHubIcon width={50} height={50} />
+  //             <GitLabIcon width={50} height={50} />
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Flutter",
+      icon: <FlutterIcon width={50} height={50} />
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Dart",
+      icon: <DartIcon width={50} height={50} />
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Android",
+      icon: <AndroidIcon width={50} height={50} />
+    },
+    {
+      skillName: "iOS",
+      icon: <IOSAppleIcon width={50} height={50} />
+    },
+    {
+      skillName: "Kotlin",
+      icon: <KotlinIcon width={50} height={50} />
+    },
+    {
+      skillName: "Swift",
+      icon: <SwiftIcon width={50} height={50} />
+    },
+    {
+      skillName: "GitHub",
+      icon: <GitHubIcon width={50} height={50} />
+    },
+    {
+      skillName: "GitLab",
+      icon: <GitLabIcon width={50} height={50} />
+    },
+    {
+      skillName: "Firebase",
+      icon: <FirebaseIcon width={50} height={50} />
+    },
+    {
+      skillName: "Codemagic",
+      icon: <CodemagicIcon width={50} height={50} />
     },
     {
       skillName: "JavaScript",
@@ -81,38 +129,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -125,7 +141,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Buea",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/buea.png"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "October 2018 - June 2022",
       desc: "Graduated with Honours. Specialized in Mobile Application Development and Software Engineering Principles.",
@@ -136,12 +152,16 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Imagine Foundation e.V.",
+      logo: require("./assets/images/imagine.png"),
+      subHeader: "Career Coaching and Development Program",
+      duration: "December 2024 - April 2025",
+      desc: "A program designed to equip international tech professionals with the skills to improve job applications, gain market insights, prepare for interviews, and receive personalized coaching to boost job opportunities abroad.",
+      descBullets: [
+        "Gained insights into international job markets and hiring practices.",
+        "Enhanced job application materials and interview skills through personalized coaching.",
+        "Developed a strong professional network with peers and mentors in the tech industry."
+      ]
     }
   ]
 };
@@ -173,7 +193,7 @@ const techStack = {
     },
     {
       Stack: "Kotlin Multiplatform with Compose",
-      progressPercentage: "40%"
+      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -233,13 +253,14 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/gasvisor.png"),
       projectName: "GasVisor",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc:
+        "With our IoT & PropTech solution GasVisor, we are digitalising the gas market, because with the help of our Ki-based to-do list, users can change gas cylinders ahead of idle running for the first time and reorder them automatically based on consumption. \nWith GasVisor, the future of gas management is here!",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://gasvisor.eu/"
         }
         //  you can add extra buttons here.
       ]
