@@ -21,7 +21,7 @@ export default function Profile() {
           const response = await fetch("/profile.json", {
             headers: {
               "Content-Type": "application/json",
-              "Accept": "application/json",
+              Accept: "application/json"
             }
           });
           if (response.ok) {
