@@ -37,8 +37,7 @@ const greeting = {
   subTitle: emoji(
     "Results-oriented Mobile Software Engineer with over 4 years of experience developinghigh-performance iOS and Android applications using Flutter. Passionate about leveragingtechnology to solve real-world problems and enhance user satisfaction."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "h", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -50,6 +49,7 @@ const socialMediaLinks = {
   gmail: "kevinwuyika@gmail.com",
   gitlab: "https://gitlab.com/Wuyika",
   twitter: "https://x.com/sergekevin11",
+  medium: "https://medium.com/@wuyika.serge",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -222,7 +222,13 @@ const workExperiences = {
       company: "Zinger Systems Ltd",
       companylogo: require("./assets/images/zinger.png"),
       date: "Aug 2021 – Sep 2024",
-      desc: "o eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "",
+      descBullets: [
+        "Engineered core features of the Motowa ride-sharing app using Flutter with efficient statemanagement (BLoC), enhancing app performance and user experience, resulting in 100+downloads within the first month.",
+        "Refactored codebase following Clean Architecture principles to enhance stability and efficiency, reducing crash rates by 50% in version 1.",
+        "Implemented the map view of version 2 using Flutter maps and open route service API for routing on the map.",
+        "Integrated Parse Server API into the mobile application in close collaboration with the backend engineer, implementing efficient asynchronous data handling and optimizing API calls to improve server communication and reduce load times."
+      ]
     }
   ]
 };
@@ -248,20 +254,27 @@ const bigProjects = {
         "With our IoT & PropTech solution GasVisor, we are digitalising the gas market, because with the help of our Ki-based to-do list, users can change gas cylinders ahead of idle running for the first time and reorder them automatically based on consumption. \nWith GasVisor, the future of gas management is here!",
       footerLink: [
         {
+          name: "Download app",
+          url: "https://gasvisor.eu/"
+        },
+        {
           name: "Visit Website",
           url: "https://gasvisor.eu/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/bolamba.png"),
+      projectName: "Bolamba",
+      projectDesc: "E-commerce platform for merchants and customers.",
       footerLink: [
         {
+          name: "Download apk",
+          url: "https://gasvisor.eu/"
+        },
+        {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://www.bolamba.cm/"
         }
       ]
     }
@@ -281,21 +294,13 @@ const achievementSection = {
     {
       title: "Meta Android/iOS Developer",
       subtitle:
-        "Completed Meta's Android/iOS Developer Professional Certificate",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Introduction to Android Mobile Application Development and iOS Mobile Application Development",
+      image: require("./assets/images/meta.jpg"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certification",
+          url: "https://www.coursera.org/account/accomplishments/records/KHS0A9OJKOKD"
         }
       ]
     },
