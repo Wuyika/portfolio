@@ -7,6 +7,7 @@ const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
+
 export default function Profile() {
   const [prof, setrepo] = useState([]);
   function setProfileFunction(array) {
@@ -15,23 +16,32 @@ export default function Profile() {
 
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
-      const getProfileData = () => {
-        fetch("/profile.json")
-          .then(result => {
-            if (result.ok) {
-              return result.json();
+      const getProfileData = async () => {
+        try {
+          const response = await fetch("/profile.json", {
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
             }
-          })
-          .then(response => {
-            setProfileFunction(response.data.user);
-          })
-          .catch(function (error) {
-            console.error(
-              `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
-            );
+          });
+          if (response.ok) {
+            // If the response is ok, parse the JSON data
+            console.log("Fetching profile data from profile.json");
+            console.log("response", response);
+            const data = await response.json();
+            setProfileFunction(data);
+          } else {
+            console.error("Failed to fetch profile data");
             setProfileFunction("Error");
             openSource.showGithubProfile = "false";
-          });
+          }
+        } catch (error) {
+          console.error(
+            `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
+          );
+          setProfileFunction("Error");
+          openSource.showGithubProfile = "false";
+        }
       };
       getProfileData();
     }

@@ -70,17 +70,6 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-  // <FlutterIcon width={50} height={50} />
-  //             <DartIcon width={50} height={50} />
-  //             <AndroidIcon width={50} height={50} />
-  //             <KotlinIcon width={50} height={50} />
-  //             <CodemagicIcon width={50} height={50} />
-  //             <FirebaseIcon width={50} height={50} />
-  //             <SwiftIcon width={50} height={50} />
-  //             <GitHubIcon width={50} height={50} />
-  //             <GitLabIcon width={50} height={50} />
   softwareSkills: [
     {
       skillName: "Flutter",
@@ -131,7 +120,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
@@ -196,7 +185,7 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -395,7 +384,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all!",
   number: "+237-653548653",
   email_address: "kevinwuyika@gmail.com"
 };
